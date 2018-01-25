@@ -30,6 +30,7 @@ class App extends Component {
     return (
       <Fragment>
         <div className="container row">
+          <button style={ hidden } className="btn back" onClick={this.toggle.bind(this)}>Back</button>
           <div className="main col">
             <h2>How long is the drive?</h2>
             <div className="content col">
@@ -55,7 +56,8 @@ class App extends Component {
         <div className="button-result row">
           <button style={ show } className="btn" onClick={this.toggle.bind(this)}>Gimme the Distance!</button>
           <div className="result" style={ hidden }>
-            result
+            <h2>22 min</h2>
+            <p>Well, that ain't far</p>
           </div>
         </div>
       </Fragment>
