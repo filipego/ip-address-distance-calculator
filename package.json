@@ -2,6 +2,8 @@
   "name": "ip-address-distance-calculator",
   "version": "0.1.0",
   "private": true,
+  "author": "Filipe Valente",
+  "homepage": ".",
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
@@ -10,6 +12,8 @@
   "scripts": {
     "start": "react-scripts-with-sass start",
     "build": "react-scripts-with-sass build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
